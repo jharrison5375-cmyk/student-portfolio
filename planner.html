@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Academic Planner | Jennifer Harrison</title>
+<meta name="description" content="Track study tasks and deadlines.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600&family=Newsreader:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="glow" id="glow" aria-hidden="true"></div>
+<header class="site-header">
+<nav class="nav" aria-label="Main navigation">
+<a class="brand" href="index.html">Jennifer Harrison</a>
+<button class="menu-btn" id="menuBtn" aria-label="Toggle menu" aria-expanded="false" aria-controls="menu">&#9776;</button>
+<ul id="menu"><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="projects.html">Projects</a></li><li><a href="planner.html" aria-current="page">Planner</a></li><li><a href="contact.html">Contact</a></li></ul>
+</nav>
+</header>
+<main>
+
+<div class="wrap page-title"><h1>Academic planner</h1><p>Add tasks, tick them off when done, and delete what you no longer need. Your tasks stay saved in this browser.</p></div>
+<section>
+<div class="wrap">
+<div class="panel">
+<form id="taskForm" class="add-task" novalidate>
+<label class="sr" for="taskInput" style="position:absolute;left:-9999px">Task</label>
+<input type="text" id="taskInput" placeholder="For example: Read chapter 3 of Intro to Cybersecurity" maxlength="120">
+<label for="taskDate" style="position:absolute;left:-9999px">Due date</label>
+<input type="date" id="taskDate">
+<button class="btn" type="submit">Add task</button>
+</form>
+<p class="error" id="taskMsg" role="alert"></p>
+<ul id="taskList"></ul>
+<div class="stats"><span id="count">0 of 0 completed</span><button class="btn ghost" id="clearDone" type="button" style="padding:.4rem 1rem;font-size:.9rem">Clear completed</button></div>
+</div>
+</div>
+</section>
+</main>
+<footer class="site-footer">
+<p>&copy; 2026 Jennifer Harrison. BSc Cybersecurity, MIVA Open University.</p>
+</footer>
+<script src="main.js"></script>
+<script src="planner.js"></script>
+</body>
+</html>

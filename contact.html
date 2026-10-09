@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact | Jennifer Harrison</title>
+<meta name="description" content="Contact Jennifer Harrison.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600&family=Newsreader:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="glow" id="glow" aria-hidden="true"></div>
+<header class="site-header">
+<nav class="nav" aria-label="Main navigation">
+<a class="brand" href="index.html">Jennifer Harrison</a>
+<button class="menu-btn" id="menuBtn" aria-label="Toggle menu" aria-expanded="false" aria-controls="menu">&#9776;</button>
+<ul id="menu"><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="projects.html">Projects</a></li><li><a href="planner.html">Planner</a></li><li><a href="contact.html" aria-current="page">Contact</a></li></ul>
+</nav>
+</header>
+<main>
+
+<div class="wrap page-title"><h1>Contact me</h1><p>Send a message using the form, or email me directly.</p></div>
+<section>
+<div class="wrap contact">
+<form class="panel" id="contactForm" novalidate>
+<div class="field"><label for="name">Name</label><input type="text" id="name" name="name" autocomplete="name"><p class="error" id="nameError"></p></div>
+<div class="field"><label for="email">Email address</label><input type="text" id="email" name="email" autocomplete="email"><p class="error" id="emailError"></p></div>
+<div class="field"><label for="phone">Phone number</label><input type="text" id="phone" name="phone" inputmode="numeric" autocomplete="tel"><p class="error" id="phoneError"></p></div>
+<div class="field"><label for="message">Message</label><textarea id="message" name="message" rows="5"></textarea><p class="error" id="messageError"></p></div>
+<button class="btn" type="submit">Send message</button>
+<p id="formStatus" role="status"></p>
+</form>
+<aside class="panel">
+<h2>Details</h2>
+<ul class="clean"><li><a href="mailto:jenniferharrisonstudio@gmail.com">jenniferharrisonstudio@gmail.com</a></li><li>MIVA Open University, Cybersecurity</li></ul>
+</aside>
+</div>
+</section>
+</main>
+<footer class="site-footer">
+<p>&copy; 2026 Jennifer Harrison. BSc Cybersecurity, MIVA Open University.</p>
+</footer>
+<script src="main.js"></script>
+<script src="contact.js"></script>
+</body>
+</html>
